@@ -1,0 +1,82 @@
+.f1hub-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 2rem;
+  padding: 2.5rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+@media (max-width: 860px) { .f1hub-grid { grid-template-columns: 1fr; } }
+
+.countdown {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+
+.countdown div {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  text-align: center;
+  min-width: 64px;
+}
+
+.countdown strong {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 1.5rem;
+  color: var(--primary);
+}
+
+.countdown span { font-size: 0.7rem; color: var(--text-faint); text-transform: uppercase; }
+
+.race-live-badge {
+  margin-top: 1rem;
+  display: inline-block;
+  font-family: var(--font-mono);
+  color: var(--primary);
+  background: rgba(230, 57, 70, 0.12);
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+}
+
+.f1hub-schedule h3, .f1hub-standings h3 {
+  color: var(--primary);
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.schedule-list {
+  list-style: none;
+  max-height: 340px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.schedule-list li {
+  display: grid;
+  grid-template-columns: 40px 1fr auto;
+  gap: 0.75rem;
+  padding: 0.55rem 0.75rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.schedule-list li.is-next {
+  background: rgba(230, 57, 70, 0.1);
+  border: 1px solid rgba(230, 57, 70, 0.35);
+}
+
+.f1hub-standings {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 3rem 0;
+}
+
+@media (max-width: 860px) { .f1hub-standings { grid-template-columns: 1fr; } }

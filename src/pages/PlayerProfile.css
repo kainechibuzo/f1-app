@@ -1,0 +1,51 @@
+.player-hero {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  padding: 3rem 0 1rem;
+}
+
+.player-hero__photo {
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--primary);
+}
+
+.player-hero__title {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.player-hero__title h1 { font-family: var(--font-display); font-size: 1.8rem; }
+
+.season-switch { display: flex; gap: 0.5rem; margin-top: 0.75rem; }
+
+.season-switch .btn { padding: 0.4rem 0.9rem; font-size: 0.85rem; }
+
+.season-switch .is-active { border-color: var(--primary); color: var(--primary); }
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.stat-grid div {
+  text-align: center;
+  background: var(--bg-alt);
+  border-radius: 8px;
+  padding: 0.6rem 0.4rem;
+}
+
+.stat-grid strong {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 1.15rem;
+  color: var(--primary);
+}
+
+.stat-grid span { font-size: 0.7rem; color: var(--text-faint); text-transform: uppercase; }

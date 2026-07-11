@@ -1,0 +1,19 @@
+.form-badges {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.form-badge {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 700;
+  width: 22px;
+  height: 22px;
+  display: grid;
+  place-items: center;
+  border-radius: 4px;
+}
+
+.form-badge--good { background: rgba(60, 200, 120, 0.16); color: #4ade80; }
+.form-badge--neutral { background: rgba(154, 154, 164, 0.16); color: var(--text-muted); }
+.form-badge--bad { background: rgba(230, 57, 70, 0.16); color: var(--primary); }

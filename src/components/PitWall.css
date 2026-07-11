@@ -1,0 +1,26 @@
+.pitwall__banner {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--primary);
+  background: rgba(230, 57, 70, 0.1);
+  border: 1px dashed rgba(230, 57, 70, 0.4);
+  padding: 0.5rem 0.85rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.pitwall__table td, .pitwall__table th { white-space: nowrap; }
+
+.tire {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+}
+
+.tire--S { background: rgba(230, 57, 70, 0.16); color: #ff6b6b; }
+.tire--M { background: rgba(255, 200, 60, 0.16); color: #ffd166; }
+.tire--H { background: rgba(230, 230, 230, 0.12); color: #e5e5e5; }

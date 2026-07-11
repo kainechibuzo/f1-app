@@ -1,0 +1,16 @@
+.star-btn {
+  background: transparent;
+  color: var(--text-faint);
+  font-size: 1.2rem;
+  line-height: 1;
+  padding: 0.25rem;
+  border-radius: 6px;
+  transition: color 0.15s ease, transform 0.15s ease;
+}
+
+.star-btn:hover { color: var(--primary); transform: scale(1.1); }
+
+.star-btn--active { color: var(--primary); }
+
+.star-btn--sm { font-size: 1rem; }
+.star-btn--lg { font-size: 1.5rem; }

@@ -1,0 +1,30 @@
+.fav-group { margin-top: 2rem; }
+
+.fav-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.fav-card__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fav-fixtures {
+  list-style: none;
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.fav-fixtures li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.88rem;
+}
+
+.fav-fixtures a:hover { color: var(--primary); }
